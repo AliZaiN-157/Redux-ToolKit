@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Redux ToolKit Day 3
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [Redux ToolKit Documentation](https://redux-toolkit.js.org/)
 
-## Available Scripts
+</br>
 
-In the project directory, you can run:
+## New hooks
+[useRef](https://react-hooks-cheatsheet.com/useRef)
+</br>
+[useDispatch](https://react-redux.js.org/api/hooks#usedispatch)
 
-### `yarn start`
+## How to Add Action in Redux Store
+1. Create a reducers directory inside src/store/
+2. Create a reducer.js file inside src/store/reducers/ 
+3. Add following line of code
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Action](src/RTK3.0.svg)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4. Create reducers inside the user Slice(This object of reducers will contain Actions)
+5. addUser action contain two parameter state(in this case InitialState) and action(when a function is dipatch).
+6. Don't forget to export addUser
+## How to send Data from State/Store
+UseDispatch Hook From React-Redux helps to send data to Store
 
-### `yarn test`
+1. Create a form on home page.
+2. Add the following line of code
+   
+![useDispatch](src/RTK3.1.svg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. On submitting of form storeUser function is triggered.Calling dispatch to perform the action and store data inside state. 

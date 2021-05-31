@@ -4,6 +4,8 @@
 
 </br>
 
+## New hook
+[useSelector](https://react-redux.js.org/api/hooks#useselector)
 ## How to Add Reducer in Redux Store
 1. Create a reducers directory inside src/store/
 2. Create a reducer.js file inside src/store/reducers/ 
